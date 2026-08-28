@@ -80,10 +80,9 @@ MacroLoom uses Sentry and service logs to process information about:
 - Crashes, hangs, errors and failed operations.
 - Retry outcomes and broad performance measurements.
 - App, device and operating-system information.
-- A MacroLoom account identifier used to investigate failures affecting a particular account.
 - Technical request identifiers and server response status categories.
 
-Sentry is configured without screenshots, view-hierarchy capture, default personal-information collection or automatic network-request capture. Diagnostics operate separately from optional product analytics.
+Sentry is configured without a MacroLoom account identifier, screenshots, view-hierarchy capture, default personal-information collection or automatic network-request capture. Diagnostics operate separately from optional product analytics. Diagnostic records may still contain technical information that applicable law treats as personal data, such as device or network information made available by the service.
 
 ### Support communications
 
@@ -158,7 +157,7 @@ MacroLoom uses the following retention criteria:
 - Profile, goal, diary, analysis-request and weight information is generally retained while your account exists.
 - Photographs not selected for retention are removed after processing and request cleanup.
 - Retained meal photographs are generally kept with the associated account data.
-- Optional analytics and diagnostic information is retained according to the configured retention periods in PostHog and Sentry and for no longer than reasonably needed for product analysis, reliability and security.
+- Optional analytics and diagnostic information is retained according to the configured retention periods in PostHog and Sentry and for no longer than reasonably needed for product analysis, reliability and security. Account deletion requests deletion of product-analytics records associated with the MacroLoom analytics identifier; account-agnostic diagnostic records follow Sentry's configured retention period.
 - Subscription, security and fraud-prevention records may be retained for as long as reasonably needed to handle disputes, prevent abuse and meet legal, tax or accounting obligations.
 - Support correspondence is retained while needed to answer the request and handle related legal or security matters.
 - Deleted information may remain temporarily in restricted backups until those backups are overwritten under the provider's normal backup cycle.
@@ -176,7 +175,9 @@ MacroLoom provides controls to:
 - Export your MacroLoom data.
 - Delete your MacroLoom account and associated app data.
 
-Depending on the circumstances, UK data-protection law may also give you the right to:
+The in-app export provides core account and service data held in MacroLoom's backend. It may not contain support correspondence, product-analytics records, account-agnostic diagnostic records or information retained separately for legal or security reasons. To request a complete search and copy of personal data associated with you, use the contact process below.
+
+Depending on where you live and the circumstances, applicable data-protection law may also give you the right to:
 
 - Request access to your personal data.
 - Correct inaccurate or incomplete data.
@@ -186,13 +187,15 @@ Depending on the circumstances, UK data-protection law may also give you the rig
 - Withdraw consent.
 - Complain to a supervisory authority.
 
-To exercise a right, email [macroloom.support@gmail.com](mailto:macroloom.support@gmail.com). Reasonable information may be requested to verify your identity and protect the account.
+To exercise a right or request a complete copy of your personal data, email [macroloom.support@gmail.com](mailto:macroloom.support@gmail.com). Reasonable information may be requested to verify your identity and protect the account. MacroLoom will respond within the period required by the law that applies to the request.
 
 You may complain to the UK Information Commissioner's Office through [ico.org.uk/make-a-complaint](https://ico.org.uk/make-a-complaint/).
 
 ## 10. Account deletion and subscriptions
 
-You can delete your account from MacroLoom Settings. Account deletion removes the authentication account, profile, diary, weight history, analysis-request records and stored meal photographs from active MacroLoom systems, subject to limited legal retention and backup periods described above.
+You can delete your account from MacroLoom Settings. Account deletion removes the authentication account, profile, diary, weight history, analysis-request records and stored meal photographs from active MacroLoom systems, and requests deletion of product-analytics records associated with the account where product analytics was enabled. Account-agnostic diagnostic records, legally retained records and temporary backups follow the retention rules described above.
+
+MacroLoom also attempts to revoke its Sign in with Apple authorization during authenticated account deletion. If Apple revocation cannot be completed automatically, the app confirms that the MacroLoom account data has been deleted and explains how to disconnect MacroLoom manually in Apple Account settings.
 
 Deleting the app or your MacroLoom account does not cancel an App Store subscription. Subscriptions must be managed separately through your Apple account's subscription settings.
 
