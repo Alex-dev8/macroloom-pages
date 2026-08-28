@@ -39,6 +39,7 @@ MacroLoom does not receive your Apple ID password.
 - Calorie and macro targets.
 - Unit and photo-retention preferences.
 - Body-weight records imported from Apple Health when you request an import and grant access.
+- The date and version of the health-data consent, Terms of Use acceptance and Privacy Policy acknowledgement recorded during onboarding.
 
 Some of this information may constitute special-category health data under UK data-protection law.
 
@@ -111,7 +112,7 @@ MacroLoom processes personal data for the following purposes:
 | Respond to support and data-rights requests. | Performance of the contract, legal obligations and legitimate interests in supporting users and resolving disputes. |
 | Meet tax, accounting, consumer-protection, regulatory or legal requirements and establish or defend legal claims. | Legal obligation and legitimate interests. |
 
-Where processing relies on consent, you may withdraw that consent. Withdrawal does not make earlier processing unlawful. If consent is withdrawn for information that is necessary to provide MacroLoom's core nutrition and health-tracking features, those features may no longer be available and account deletion may be required to remove the associated information.
+Where processing relies on consent, you may withdraw that consent. Withdrawal does not make earlier processing unlawful. MacroLoom obtains a separate affirmative choice before asking you to provide health-related information during onboarding and records the date and text version accepted. If consent is withdrawn for information that is necessary to provide MacroLoom's core nutrition and health-tracking features, those features may no longer be available and account deletion may be required to remove the associated information.
 
 ## 5. AI food analysis and photographs
 
