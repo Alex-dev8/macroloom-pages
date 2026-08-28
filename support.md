@@ -36,6 +36,14 @@ Deleting the MacroLoom app or account does not cancel an App Store subscription.
 2. Select **Prepare data export**.
 3. Use the share sheet to save or send the generated JSON file.
 
+The export contains the account and profile information held in MacroLoom's backend, meal diary and food items, weight and water entries, subscription status, AI usage and analysis-request records, and temporary download links for retained meal photographs. Photo links expire after one hour, so download any photographs you want to keep promptly.
+
+### Request a complete copy of your personal data
+
+The in-app export is designed to provide your core MacroLoom account and service data quickly. A complete access request may also require a search of records held separately by support, analytics, diagnostics or legally required retention systems.
+
+To request that broader copy, email [macroloom.support@gmail.com](mailto:macroloom.support@gmail.com) with the subject **Personal data access request**. State that you are requesting a copy of your personal data and include the Apple relay email address associated with MacroLoom if you know it. Reasonable information may be requested to verify account ownership before personal data is released. Do not send Apple identity tokens, passwords or payment-card details.
+
 ### Delete your account
 
 1. Open MacroLoom **Settings**.
