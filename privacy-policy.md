@@ -4,7 +4,7 @@ title: MacroLoom Privacy Policy
 
 # MacroLoom Privacy Policy
 
-**Last updated: 28 August 2026**
+**Last updated: 31 August 2026**
 
 This Privacy Policy explains how personal data is handled when you use MacroLoom.
 
@@ -32,12 +32,12 @@ MacroLoom does not receive your Apple ID password.
 
 ### Profile, health and goal information
 
-- Date of birth.
+- Age, stored as an approximate date of birth for calorie calculations.
 - Height, current weight and goal weight.
-- Sex used for energy calculations.
+- Gender used for energy calculations.
 - Activity level, goal direction and weekly target.
 - Calorie and macro targets.
-- Unit and photo-retention preferences.
+- Unit preferences.
 - Body-weight records imported from Apple Health when you request an import and grant access.
 - The date and version of the health-data consent, Terms of Use acceptance and Privacy Policy acknowledgement recorded during onboarding.
 
@@ -61,16 +61,16 @@ Apple processes payment-card and billing credentials. MacroLoom does not receive
 
 ### Product analytics
 
-If you enable product analytics, MacroLoom uses PostHog to record information such as:
+When product analytics is enabled, MacroLoom uses PostHog to record information such as:
 
 - Screens and features used.
 - Onboarding, paywall and purchase-flow events.
 - Meal capture, analysis and save outcomes.
 - Broad analysis-duration and confidence categories.
-- Diary, goals, progress, export, deletion and Apple Health feature interactions.
+- Diary, goals, progress, export and Apple Health feature interactions.
 - App lifecycle, app version, device and operating-system information made available by the analytics service.
 
-Product analytics is disabled until you opt in and can be disabled in MacroLoom Settings.
+Product analytics is enabled by default. You can disable or re-enable it at any time under Settings > Your data > Privacy and analytics. Disabling analytics stops subsequent PostHog capture; it does not retroactively remove events already collected. Account deletion requests deletion of the PostHog records associated with the account as described below.
 
 MacroLoom's own analytics events are designed not to include food or item names, photographs, calorie or macro values, weight values, body measurements, dates of birth, notes, email addresses, Apple credentials, signed transactions or access tokens. Automatic session replay and automatic screen-content capture are not enabled.
 
@@ -107,7 +107,7 @@ MacroLoom processes personal data for the following purposes:
 |---|---|
 | Create and maintain your account; calculate goals; maintain your diary; analyse food; synchronise information; provide exports; and delete your account. | Performance of the service contract. Where the information constitutes special-category health data, explicit consent is also required. |
 | Verify subscriptions, enforce scan limits, prevent fraud and abuse, and protect accounts and infrastructure. | Performance of the contract and legitimate interests in operating and securing the service. |
-| Record optional product analytics through PostHog. | Consent. You can withdraw it in Settings. |
+| Record limited product analytics through PostHog to understand feature use and improve product reliability. | Legitimate interests in understanding and improving the service. You can object by disabling analytics in Settings. |
 | Diagnose crashes, errors, hangs and performance problems through Sentry and service logs. | Legitimate interests in maintaining a reliable and secure service. |
 | Respond to support and data-rights requests. | Performance of the contract, legal obligations and legitimate interests in supporting users and resolving disputes. |
 | Meet tax, accounting, consumer-protection, regulatory or legal requirements and establish or defend legal claims. | Legal obligation and legitimate interests. |
@@ -120,7 +120,7 @@ When you request food-photo analysis, the selected image is uploaded to MacroLoo
 
 MacroLoom sends API requests with `store: false`. OpenAI may still process or temporarily retain API information as described in its applicable service terms, privacy documentation and abuse-monitoring policies.
 
-If meal-photo retention is disabled, MacroLoom removes the photo from its storage after the analysis request and cleanup process complete. If retention is enabled, the photograph is associated with the saved meal and retained with the account until it is removed through supported deletion processes. Interrupted uploads or requests may require additional cleanup time.
+When you save an analyzed meal, its photograph is associated with that meal and retained with the account until the meal or account is deleted. If you abandon the review without saving, MacroLoom removes the temporary upload through its cleanup process. Interrupted uploads or requests may require additional cleanup time.
 
 AI nutrition results are estimates. A result may be recorded temporarily or with the account to complete the request safely and avoid duplicate processing. It is added to the user's meal diary only after being presented for review and saved by the user.
 
@@ -156,9 +156,9 @@ MacroLoom does not currently use personal data for third-party advertising or cr
 MacroLoom uses the following retention criteria:
 
 - Profile, goal, diary, analysis-request and weight information is generally retained while your account exists.
-- Photographs not selected for retention are removed after processing and request cleanup.
-- Retained meal photographs are generally kept with the associated account data.
-- Optional analytics and diagnostic information is retained according to the configured retention periods in PostHog and Sentry and for no longer than reasonably needed for product analysis, reliability and security. Account deletion requests deletion of product-analytics records associated with the MacroLoom analytics identifier; account-agnostic diagnostic records follow Sentry's configured retention period.
+- Photographs for abandoned meal reviews are removed through request cleanup.
+- Saved meal photographs are generally kept with the associated account data.
+- Product analytics and diagnostic information is retained according to the configured retention periods in PostHog and Sentry and for no longer than reasonably needed for product analysis, reliability and security. Account deletion requests deletion of product-analytics records associated with the MacroLoom analytics identifier; account-agnostic diagnostic records follow Sentry's configured retention period.
 - Subscription, security and fraud-prevention records may be retained for as long as reasonably needed to handle disputes, prevent abuse and meet legal, tax or accounting obligations.
 - Support correspondence is retained while needed to answer the request and handle related legal or security matters.
 - Deleted information may remain temporarily in restricted backups until those backups are overwritten under the provider's normal backup cycle.
@@ -171,7 +171,7 @@ MacroLoom provides controls to:
 
 - Edit diary entries and nutrition goals.
 - Disable optional product analytics.
-- Disable retention for future meal photographs.
+- Delete an individual meal and its stored photograph.
 - Revoke Apple Health access through iOS Settings.
 - Export your MacroLoom data.
 - Delete your MacroLoom account and associated app data.
